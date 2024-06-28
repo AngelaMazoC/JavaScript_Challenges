@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="index.js" defer></script>
+  <title> Conversor de temperaturas</title>
+  <style>
+    html {
+      font-size: 16px;
+    }
+
+    body {
+      margin: auto;
+      font-size: 18px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background: #eeebe7;
+    }
+
+    .conversor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .container {
+      width: 600px;
+    }
+
+    .title {
+      background-color: rgb(3, 129, 66);
+      text-align: center;
+      color: #FFFFFF;
+      font-size: 30px;
+      margin: 0;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    .card {
+      height: 200px;
+      border: 1px solid rgba(3, 129, 66, 0.2);
+      background-color: #D0D0D0;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .resultado {
+      width: 300px;
+      text-align: center;
+      margin: 10px;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .container-temperature {
+      display: flex;
+      flex-direction: row;
+      width: 350px;
+      justify-content: space-around;
+    }
+
+    .temperature,
+    .options {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .temp,
+    .temp-tipo {
+      width: 150px;
+      height: 50px;
+      margin: 0;
+      border: none;
+    }
+
+    .temp{
+      background: transparent;
+      outline: none;
+      border: 2px solid #FFFFFF;
+      padding: 8px;
+      margin-bottom: 15px;
+    }
+
+    .temp:focus{
+      border: 1px solid rgb(3, 129, 66);
+    }
+
+    .options select {
+      display: inline-block;
+      width: 100%;
+      cursor: pointer;
+      padding: 5px 15px;
+      height: 42px;
+      border-radius: 5px;
+      font-size: 1em;
+      border: 2px solid rgba(0, 0, 0, 0.2);
+      position: relative;
+      transition: all 0.25s ease;
+    }
+
+    #convertir{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, rgb(3, 129, 66), rgb(4, 97, 50));
+    color: #FFFFFF;
+    padding: 12px 80px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all .1s ease-in;
+    text-transform: uppercase;
+    cursor: pointer;
+    }
+
+    #convertir:hover{
+      background: linear-gradient(to bottom, rgba(3, 129, 66, 0.8), rgba(4, 97, 50, 0.3));
+      color: #000000;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="conversor">
+    <div class="container">
+      <h1 class="title">Conversor de temperaturas</h1>
+      <div class="card">
+        <span class="resultado" id="resultado"></span>
+        <div class="container-temperature">
+          <div class="temperature">
+            <label for="">Temperatura</label>
+            <input class="temp" type="text" id="temp">
+          </div>
+          <div class="options">
+            <label for="">Tipo</label>
+            <select class="temp-tipo" name="" id="temp-tipo">
+              <option id="Fahrenheit">Fahrenheit</option>
+              <option id="Celsius">Celsius</option>
+            </select>
+          </div>
+        </div>
+        <button id="convertir">Convertir</button>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

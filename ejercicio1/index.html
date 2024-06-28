@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="ejercicio1.js" defer></script>
+  <title>Calculadora de BMI</title>
+  <style>
+    body {
+      margin: auto;
+      font-size: 18px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .calculadora {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .container {
+      width: 600px;
+    }
+
+    .title {
+      background-color: #005eaa;
+      text-align: center;
+      color: #FFFFFF;
+      margin: 0;
+    }
+
+    .card {
+      border: 1px solid rgba(0, 0, 0, .125);
+    }
+
+    .forms {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px 0 15px 30px;
+      margin: 0;
+    }
+
+    .forms input {
+      margin: 5px 0 20px 0;
+      padding: 1px 1px 1px 3px;
+      width: 200px;
+    }
+
+    button {
+      background-color: #005eaa;
+      color: #FFFFFF;
+      border-radius: 10%;
+      border: none;
+      width: 80px;
+      height: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="calculadora">
+    <div class="container">
+      <h1 class="title">Calculadora de IMC</h1>
+      <div class="card">
+        <form class="forms" id="formulario">
+          <label for="estatura">Estatura : Metros</label>
+          <input type="text" id="estatura">
+          <label for="peso">Peso : Kilogramos</label>
+          <input type="text" id="peso">
+          <button type="submit">Calcular</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
