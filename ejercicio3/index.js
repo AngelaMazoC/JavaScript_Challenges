@@ -1,24 +1,25 @@
 // Generador de Nombres de Usuario
 
-var nombre = 'Angela'
-var apellido = 'Mazo'
-
 function generarNombre(nombre, apellido) {
-  if (nombre.length < 3 || apellido.length <3) {
+  var nombre = document.getElementById("name").value;
+  var apellido = document.getElementById("last-name").value;
+
+  if (nombre.length < 3 || apellido.length < 3) {
     console.log('El nombre y el apellido deben tener al menos tres caracteres.');
+    document.getElementById('resultado').innerText = 'El nombre y el apellido deben tener al menos tres caracteres.';
     return;
   }
 
   var nomPart = nombre.substring(0, 3);
   var apePart = apellido.substring(0, 3);
-  var numAle = Math.round(Math.random()*100);
+  var numAle = Math.round(Math.random() * 100);
 
   var nomUsuario = nomPart + apePart + numAle
 
-  console.log(nomUsuario);
-  console.log(nombre + ' ' + apellido);
+  document.getElementById('user').innerText = 'Nombre de usuario: ' + nombre + ' ' + apellido;
+  document.getElementById('resultado').innerText = 'Nombre de usuario generado: ' + nomUsuario;
 }
 
-generarNombre(nombre, apellido)
+
 
 

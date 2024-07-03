@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Adivinanzas</title>
+  <style>
+    body {
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f0f8ff;
+      margin: 0;
+    }
+
+    h1 {
+      color: #000000;
+    }
+
+    span {
+      margin: 10px 0;
+      color: #646464;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #resultado {
+      margin: 10px 0;
+      font-weight: bold;
+      color: #df4545;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Juego de Adivinanzas</h1>
+  <span>Adivina el número entre 1 y 10, tienes 3 intentos</span>
+  <span>¡Buena suerte!</span>
+  <p id="resultado"></p>
+  <input type="number" id="opcUser">
+  <div class="container">
+    <button onclick="playGame()">Jugar</button>
+    <button onclick="reset()">Borrar</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

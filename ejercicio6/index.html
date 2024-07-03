@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Lanzamiento de Dados</title>
+  <style>
+    body {
+      font-family:Georgia, 'Courier New', Courier, monospace;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      background-color: #f2f2f2f0;
+    }
+
+    .container {
+      text-align: center;
+      background-color: #045cffd0;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #1200b3;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #000000;
+    }
+
+    #resultado {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Simulador de Lanzamiento de Dados</h1>
+    <button onclick="lanzar()">Lanzar Dados</button>
+    <div id="resultado"></div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
