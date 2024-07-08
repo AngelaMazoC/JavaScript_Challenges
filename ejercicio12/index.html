@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Inversor de palabras</title>
+  <style>
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      display: flex;
+      justify-content: center;
+      background-color: #DEEFE7;
+    }
+
+    .container {
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      background-color: #002333;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      align-items: center;
+    }
+
+    h1 {
+      color: #FFFFFF;
+    }
+
+    input {
+      width: 300px;
+      padding: 10px 20px;
+      margin: 10px 0;
+      border: 1px solid #cccccc;
+      border-radius: 20px;
+    }
+
+    button {
+      width: 100px;
+      padding: 10px;
+      background-color: #159A9C;
+      border: none;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #017f81;
+    }
+
+    #textoInv {
+      color: #FFFFFF;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Inversor de palabras</h1>
+    <div class="container-input">
+      <input type="text" id="textoOrg" placeholder="Escribe el mensaje a invertir">
+    </div>
+    <div class="container-btns">
+      <button onclick="invertir()">Invertir</button>
+    </div>
+    <p id="textoInv"></p>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

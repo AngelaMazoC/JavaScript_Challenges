@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Decodificador de mensajes secretos</title>
+  <style>
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      display: flex;
+      justify-content: center;
+      background-color: #DEE0D5;
+    }
+
+    .container {
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      background-color: #983C2D;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      align-items: center;
+    }
+
+    h1 {
+      color: #fff;
+    }
+
+    input {
+      width: 300px;
+      padding: 10px 20px;
+      margin: 10px 0;
+      border: 1px solid #cccccc;
+      border-radius: 20px;
+    }
+
+    button {
+      width: 100px;
+      padding: 10px;
+      background-color: #E2AC48;
+      border: none;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #da981f;
+    }
+
+    #textoDesCodificado {
+      color: #000;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Decodificador de mensajes secretos</h1>
+    <div class="container-inputs">
+      <input type="text" id="textoCodificado" placeholder="Escribe el mensaje codificado">
+    </div>
+    <div class="container-btns">
+      <button onclick="decodificar()">Descifrar</button>
+    </div>
+    <p id="textoDesCodificado"></p>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
